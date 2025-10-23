@@ -27,6 +27,9 @@ cd String Number Boolean
 ```bash
 cd Object, tuple, enum, array
 ```
+```bash
+cd Union, Literal, Type Alias
+```
 
 2. Compile a TypeScript file (`app.ts`) to JavaScript:
 
