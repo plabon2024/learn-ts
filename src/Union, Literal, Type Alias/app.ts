@@ -1,10 +1,10 @@
 // Union | to  accept multiple data type 
 function add(param1: number | string, param2: number | string) {
-    if (typeof param1 === "number" && typeof param2 === "number") {
-        return param1 + param2
-    } else {
-        return `${param1} ${param2}`
-    }
+  if (typeof param1 === "number" && typeof param2 === "number") {
+    return param1 + param2
+  } else {
+    return `${param1} ${param2}`
+  }
 }
 console.log(add(1, 3))
 console.log(add("shaeed", "plabon"))
@@ -12,13 +12,13 @@ console.log(add("shaeed", "plabon"))
 //  LITERAL TYPES 
 // Literal types are often used with union types, type aliases, or function parameters to make your code safer and clearer.
 function combine(num1: number | string, num2: number | string, conversionType: "as-number" | "as-string") {
-    let result;
-    if (typeof num1 === "number" && typeof num2 === "number" || conversionType === "as-number") {
-        result = +num1 + +num2;
-    } else {
-        result = num1.toString() + num2.toString();
-    }
-    return result;
+  let result;
+  if (typeof num1 === "number" && typeof num2 === "number" || conversionType === "as-number") {
+    result = +num1 + +num2;
+  } else {
+    result = num1.toString() + num2.toString();
+  }
+  return result;
 }
 const sum1 = combine("10", "20", "as-number"); // 30
 const sum2 = combine(10, 50, "as-number");
@@ -60,7 +60,7 @@ const user2: User = {
 function greetUser(user: User) {
   console.log(`Hello, ${user.name}!`);
 }
-greetUser(user1); 
+greetUser(user1);
 
 
 
